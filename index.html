@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+        .img{
+            width:100%;
+            height: 100%;
+            position: absolute;
+        }
+        .content{
+            position: relative;
+            margin: 15px;
+            height: 100%;
+            width:100px;
+        }
+        .content button{
+            display: none;
+            background: transparent;
+            border: none;
+            font-size: 30px;
+        }
+        .dropdown{
+            display: flex;
+            flex-direction: column;
+        }
+        .dropdown{
+            display: none;
+            background-color: white;
+            width:150px;
+            opacity:0.7;
+        }
+        .content:hover .dropdown{
+        display: flex;
+        }
+        .dropdown p{
+
+            padding-top:50px;
+        }
+        .dropdown p:hover{
+            font-weight: 600;
+          background-color: gray;
+           width:150px;
+           text-align: center;
+        }
+        .content button:hover{
+            background-color: white;
+        }
+        .navbar{
+            position: relative;
+            display: flex;
+            background-color: white;
+            opacity: 0.7;
+            height: 60px;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .navbar p:hover{
+            border-bottom:2px solid aquamarine;
+        }
+        @media (max-width:600px){
+            .navbar{
+                display: none;
+            }
+            .content button{
+                display: block;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <img class="img" src="download.jpg" alt="">
+<div class="content">
+    <button><i class="fa fa-bars"></i></button>
+    <div class="dropdown">
+        <p>Home</p>
+        <p>Contact Us</p>
+        <p>About Us</p>
+        <p>Feed Back</p>
+        <p>Photos</p>
+        <p>More</p>
+    </div>
+</div>
+<div class="navbar">
+    <p>Home</p>
+    <p>Contact Us</p>
+    <p>About Us</p>
+    <p>Feed Back</p>
+    <p>Photos</p>
+    <p>More</p>
+    
+</div>
+</body>
+</html>
